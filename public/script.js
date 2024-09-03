@@ -58,3 +58,16 @@ window.addEventListener('resize', newImgOrder);
 
 // Initial call to set the correct order based on the current window size
 newImgOrder();
+
+var prevScrollPos = window.pageYOffset;
+window.onscroll = function() {
+  var currentScrollPos = window.pageYOffset;
+  if (prevScrollPos > currentScrollPos) {
+    // Scrolling up, show the navbar
+    document.querySelector("header").style.top = "0";
+  } else {
+    // Scrolling down, hide the navbar
+    document.querySelector("header").style.top = "-90px"; // Adjust the value as needed
+  }
+  prevScrollPos = currentScrollPos;
+};

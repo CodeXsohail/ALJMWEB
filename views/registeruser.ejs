@@ -1,0 +1,44 @@
+<% layout("/layouts/headerFooter.ejs") %>
+
+<div class="page">
+    <h2 class="login-title">Create New Account</h2>
+    <div class="login-page">
+        <form action="/user" method="POST">
+            <div class="input-box">
+                <label for="fname">First Name</label><br>
+                <input type="text" placeholder="Fisrt name" name="fname" required>
+            </div>
+            <div class="input-box">
+                <label for="lname">Last Name</label><br>
+                <input type="text" placeholder="Last name" name="lname" required>
+            </div>
+            <div class="input-box">
+                <label for="uname">Username</label><br>
+                <input type="text" placeholder="Username" name="uname" required>
+            </div>
+            <div class="input-box">
+                <label for="pass">Password</label><br>
+                <input type="password" placeholder="Password" name="pass" required>
+            </div>
+            <div class="input-box">
+                <label for="email">Email</label><br>
+                <input type="email" placeholder="Email Id" name="email" required>
+            </div>
+            <div class="input-box">
+                <label for="country">Country</label><br>
+                <input type="text" placeholder="Country Name" name="country" required>
+            </div>
+            <div class="input-box">
+                <label for="state">State</label><br>
+                <input type="text" placeholder="state Name" name="state" required>
+            </div>
+            <div class="input-box">
+                <label for="city">City</label><br>
+                <input type="text" placeholder="city Name" name="city" required>
+            </div>
+            <button class="btn btn-register">Create</button>
+          </form>
+    </div>
+    
+  
+</div>
